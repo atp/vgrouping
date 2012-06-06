@@ -1,0 +1,213 @@
+
+/* CSS for circles */
+
+.circle {
+    width: 200px;
+    height: 125px;
+    color: #FFF;
+    display: inline;
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.circle__inner {
+    background: #4797cf;
+    border-radius: 70px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+    border-bottom: 1px solid #FFF;
+    width: 98px;
+    height: 98px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -49px;
+    margin-top: -49px;
+    z-index: 3;
+}
+
+.circle__disk {
+  background: -webkit-linear-gradient(top, #ededed 0%, #d7d7d7 100%);
+}
+
+.circle__disk {
+  background: -moz-linear-gradient(top, #ededed 0%,#d7d7d7 100%);
+}
+
+.circle__disk {
+    border: 1px solid #CCC;
+    border-radius: 200px;
+    position: absolute;
+    width: 124px;
+    height: 124px;
+    top: 50%;
+    left: 50%;
+    margin-left: -62px;
+    margin-top: -62px;
+    z-index: 2;
+    -webkit-transition-property: width, height, margin-left, margin-top;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-property: width, height, margin-left, margin-top;
+    -moz-transition-duration: 0.3s;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#d7d7d7));
+}
+
+.circle_full .circle__text {
+  display: none;
+}
+
+.circle__remove {
+  position: absolute;
+  top: 50%;
+  width: 98px;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 20px;
+  display: none;
+  opacity: 1;
+}
+
+.circle__number {
+  position: absolute;
+  top: 50%;
+  width: 98px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+  opacity: 0.5;
+}
+
+.circle__name {
+  position: absolute;
+  bottom: 50%;
+  width: 98px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.circle_over .circle__disk {
+  width: 170px;
+  height: 170px;
+  margin-left: -85px;
+  margin-top: -85px;
+  background: #e1e1e1;
+}
+
+.circle_over_bg .circle__disk {
+  width: 170px;
+  height: 170px;
+  margin-left: -85px;
+  margin-top: -85px;
+  background: #a1ffa1;
+}
+
+.circleUser {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 30px;
+  z-index: 4;
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-property: opacity;
+  -moz-transition-duration: 0.3s;
+}
+
+.circle_over .circleUser {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  opacity: 1;
+}
+
+
+/* CSS for participants */
+.userList {
+    overflow-y: auto;
+}
+
+.userList__cell {
+    font: 13px arial, sans-serif;
+    cursor: move;
+    width: 138px;
+    height: 50px;
+    margin: 10px 20px 13px 0px;
+    position: relative;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    vertical-align: top;
+    word-wrap: break-word;
+    line-height: normal;
+    float: left;
+    display: inline;
+    background: -moz-linear-gradient(center top , #FFFFFF, #F4F4F4) repeat scroll 0 0 transparent; /* FF */
+}
+
+.userList__cell {
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f4f4f4 100%); /* Chrome */
+}
+
+.userList__cell {
+    background: linear-gradient(top, #ffffff 0%,#f4f4f4 100%); /* W3C */
+}
+
+.userList__cell:hover {
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.userList__person {
+    position: absolute;
+    vertical-align: center;
+    width: 48px;
+    height: 48px;
+}
+
+.userList__name {
+    margin: 4px 4px 4px 58px;
+    overflow: hidden;
+    max-height: 40px;
+}
+
+.userList ul, li {
+    list-style: none;
+}
+
+/* default forms and participants */
+
+#participants {
+    border: 2px solid #CCCCCC;
+    background-color: #F9F9F9;
+    position: relative;
+}
+
+#groupingForm {
+    border: 1px solid #A00;
+    padding: 5px;
+    background-color: #FEE;
+    width: 80%;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+#groupingForm p {
+    margin: 2px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#groupingForm button {
+    width:85px;
+    font-size:1em;
+}
+
+
+
+
